@@ -63,7 +63,9 @@ class Home extends Component {
           <Input searchValue={searchValue} handleSearch={this.handleSearch} />
         </div>
         {filteredPosts.length === 0 && (
-          <p>Não foi encontrado nenhum post correspondente =(</p>
+          <p className="no-more-posts">
+            Não foi encontrado nenhum post correspondente =(
+          </p>
         )}
         {filteredPosts && <Posts posts={filteredPosts} />}
         <div className="buttonContainer">
