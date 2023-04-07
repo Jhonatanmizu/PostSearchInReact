@@ -1,5 +1,7 @@
+// Styles
 import "./Input.css";
-export default function Input(props) {
+
+const Input = (props) => {
   return (
     <input
       className="textInput"
@@ -9,4 +11,6 @@ export default function Input(props) {
       value={props.searchValue}
     />
   );
-}
+};
+
+export default Input;

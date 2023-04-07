@@ -1,6 +1,8 @@
-import { PostCard } from "../PostCard";
+import PostCard from "../PostCard/PostCard";
+// Styles
 import "./style.css";
-export const Posts = ({ posts }) => (
+
+const Posts = ({ posts = [] }) => (
   <div className="posts">
     {posts.map((post) => (
       <PostCard
@@ -13,3 +15,4 @@ export const Posts = ({ posts }) => (
     ))}
   </div>
 );
+export default Posts;

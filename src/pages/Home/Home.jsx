@@ -1,11 +1,10 @@
 import { Component } from "react";
 
 import "./Home.css";
-import { Posts } from "../../components/Posts/index";
-
+import Posts from "../../components/Posts";
 import { loadPosts } from "../../utils/load-posts";
-import Button from "../../components/Button/button";
-import Input from "../../components/Input/Input";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
 
 class Home extends Component {
   state = {

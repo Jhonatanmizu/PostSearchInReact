@@ -1,8 +1,12 @@
+// Styles
 import "./styles.css";
-export default function Button(props) {
+
+const Button = (props) => {
   return (
     <button disabled={props.disabled} className="btn" onClick={props.onClick}>
       {props.text}
     </button>
   );
-}
+};
+
+export default Button;
